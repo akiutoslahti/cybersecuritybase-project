@@ -21,6 +21,13 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Autowired
     PasswordEncoder passwordEncoder;
 
+    /*
+    Vulnerability: A6 - Security Misconfiguration
+    
+    Default passwords are weak and contained in common passwords lists.
+    
+    FIX: Change default passwords to something secure.
+    */
     @PostConstruct
     public void init() {
         UserAccount admin = new UserAccount("admin", "Anthony the Administrator", passwordEncoder.encode("admin12345"), "ADMIN");

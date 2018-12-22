@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Details page</title>
+    </head>
+    <body>
+
+        <!--
+        Vulnerability: A7 - Cross-Site Scripting(XSS)
+
+        Every field marked with type th:utext facilitates XSS.
+
+        FIX: Change type of fields from th:utext to th:text.
+        -->
+
+        <h3>Hello <span th:utext="${name}"/>!</h3>
+
+        <form action="/logout" method="POST">
+            <input type="submit" value="Logout"/>
+        </form>
+
+        <h3>Your registration details!</h3>
+
+        <table th:each="detail : ${details}">
+            <tr th:each="value: ${detail}">
+                <td th:utext="${value}"></td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+

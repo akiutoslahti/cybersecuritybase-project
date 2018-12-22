@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>User page</title>
+    </head>
+    <body>
+        <h3>Hello <span th:utext="${name}"/>!</h3>
+
+        <form action="/logout" method="POST">
+            <input type="submit" value="Logout"/>
+        </form>
+
+        <div th:if="${registered}">
+            <p>
+                You have been registered to event. Click <a th:href="'/details?query=' + ${name}">here</a> to see your details!
+            </p>             
+        </div>
+        <div th:unless="${registered}">
+            <p>
+                You are not yet registered to event. Click <a href="/form">here</a> to register!
+            </p>        
+        </div>
+
+    </body>
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Admin page</title>
+    </head>
+    <body>
+
+        <!--
+        Vulnerability: A7 - Cross-Site Scripting(XSS)
+        
+        Every field marked with type th:utext facilitates XSS.
+        
+        FIX: Change type of fields from th:utext to th:text.
+        -->
+
+        <h3>Hello <span th:utext="${name}"/>!</h3>
+
+        <form action="/logout" method="POST">
+            <input type="submit" value="Logout"/>
+        </form>
+
+        <h3>People enrolled to event</h3>
+
+        <table>
+            <tr>
+                <td>NAME</td>
+                <td>ADDRESS</td>
+                <td>MOBILE</td>
+                <td>MISC</td>
+            </tr>
+            <tr th:each="signup : ${signups}">
+                <td th:utext="${signup.name}"></td>
+                <td th:utext="${signup.address}"></td>
+                <td th:utext="${signup.mobile}"></td>
+                <td th:utext="${signup.misc}"></td>
+            </tr>
+        </table>
+
+    </body>
+</html>

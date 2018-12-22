@@ -1,0 +1,10 @@
+riia;dahs2Ahw;Riia Haajanen;Maakaskenraitti 36, 19430 Pertunmaa;Allergic to Balsam of Peru
+natalia;Tu2doari;Natalia Päätalo;Pohjoisesplanadi 82, 0100 Helsinki;Allergic to Egg
+eveliina;Ahyu5uWi;Eveliina Karlsson;Kajaaninkatu 3, 02150 Espoo;Allergic to Fish or shellfish
+jarmo;ieZ1aiSo;Jarmo Ahokas;Maakeskenraitti 16, 65610 Mustasaari;Allergic to Garlic
+aripekka;Eegho7at;Ari-Pekka Kantola;Hakulintie 32, 20360 Turku;Allergic to Hot Peppers
+jukkapekka;iez0ooPh;Jukka-Pekka Kankaanpää;Torikatu 2 39930 Karvia;Allergic to Oats
+tony;yoo4Itho;Tony Haajanen;Eteläesplanadi 58, 07920 Loviisa;Allergic to Meat
+hannele;Mei3Gao1;Hannele Kiri;Ysitie 95, 33420 Tampere;Allergic to Milk
+salla;vap5Xaep;Salla Turunen;Lukiokatu 3, 13220 Hämeenlinna;Allergic to Peanut
+robin;Aiphooy3;Robin Styrman;Kuhnustantie 48, 85900 Reisjärvi;Allergic to Rice

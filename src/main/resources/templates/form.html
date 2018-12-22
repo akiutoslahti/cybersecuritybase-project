@@ -5,11 +5,35 @@
     </head>
     <body>
 
-        <h1>Sign up to the event using this form</h1>
+        <h3>Sign up to the event using this form</h3>
 
         <form action="#" th:action="@{/form}" method="POST">
-            <p><label for="name">Name</label>: <input type="text" name="name" id="name"/></p>
-            <p><label for="address">Address</label>: <input type="text" name="address" id="address"/></p>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td>
+                        <input type="text" name="name" id="name" th:value="${name}" readonly="readonly"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td>
+                        <input type="text" name="address" id="address"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile:</td>
+                    <td>
+                        <input type="text" name="mobile" id="mobile"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Misc:</td>
+                    <td>
+                        <input type="text" name="misc" id="misc"/>
+                    </td>
+                </tr>
+            </table>
             <p><input type="submit" value="Submit" /></p>
         </form>
 

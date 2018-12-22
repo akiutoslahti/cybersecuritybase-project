@@ -38,7 +38,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         invalidated. Also sessions have no expiry date.
         
         FIX: Invalidate HttpSession during logout and set session expiry time.
-        */
+         */
         http.logout()
                 .invalidateHttpSession(false)
                 .deleteCookies("JSESSIONID").logoutSuccessUrl("/login");
@@ -51,7 +51,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         disabled here so CSRF is possible.
         
         FIX: Remove line below to enable csrf protection.
-        */
+         */
         http.csrf().disable();
     }
 

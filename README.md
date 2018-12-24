@@ -94,7 +94,7 @@ Steps:
 ### CSRF protections are disabled
 CSRF(cross-site request forgery) protections are disabled, so CSRF attacks are possible. To fix, enable CSRF protection mechanisms built into Spring Boot.
 
-##Vulnerability 6: A7 - Cross-Site Scripting(XSS)
+## Vulnerability 6: A7 - Cross-Site Scripting(XSS)
 
 ### Possibility to inject javascript in sign up to event form, scripts are executed on pages '/admin' and '/details'
 In html templates, every field is set to th:utext. Therefore all javascript fetched from database is executed as e.g. '/admin' or '/details' pages are loaded. Also there are no sanitizations for html/script tags in registration forms. To fix, change every th:utext field from html templates to th:text and add sanitization to form fields in event register controller.

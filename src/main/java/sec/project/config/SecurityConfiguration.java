@@ -27,7 +27,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         // Allow registration and login without authentication
         // but require it everywhere else
         http.authorizeRequests()
-                .antMatchers("/h2-console/**").permitAll()
+                .antMatchers("/register").permitAll()
                 .anyRequest().authenticated().and()
                 .formLogin().permitAll();
 
